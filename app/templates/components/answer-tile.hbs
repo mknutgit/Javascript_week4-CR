@@ -1,0 +1,20 @@
+<hr>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-centered col-sm-offset-3">
+      <h2 class="center">Current Answers:</h2>
+
+      {{#each answer.answers as |answer|}}
+      <div id="border" >
+        <h3 class="center">{{answer.answer}}</h3>
+          <p class="center"><strong>Author:</strong> {{answer.author}}</p>
+          <div class="center">
+            <button class="btn-sm btn-danger" {{action 'deleteAnswer' answer}} >Delete!</button>
+          </div>
+      </div>
+      {{/each}}
+
+    </div>
+
+  </div>
+</div>
