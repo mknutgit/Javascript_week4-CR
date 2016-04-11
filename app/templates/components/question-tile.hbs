@@ -1,9 +1,13 @@
 {{#link-to 'question' question.id}}
-<div id="border" >
-  <h3 class="center">{{question.ask}}</h3>
-    <p class="center"><strong>Asker:</strong> {{question.author}}</p>
-    <div class="center">
+<div class="container">
+  <div class="row" >
+    <div class="col-md-6" id="border">
+      <h3 class="center">{{question.ask}}</h3>
+        <p class="center"><strong>Asker:</strong> {{question.author}}</p>
+    </div>
+    <div class="col-md-2">
       <button class="btn-sm btn-primary" >Add to Question Cart</button>
     </div>
+  </div>
 </div>
 {{/link-to}}
